@@ -17,7 +17,7 @@ function qBittorrent {
     qBittorrent_download
     qBittorrent_install
     qBittorrent_config
-    qbport=$(grep -F 'WebUI\Port'  /home/$username/.config/qBittorrent/qBittorrent.conf | grep -Eo '[0-9]{1,5}')
+    qbport=$(grep -F 'WebUI\Port'  /mnt/HC_Volume_18929656/$username/.config/qBittorrent/qBittorrent.conf | grep -Eo '[0-9]{1,5}')
     tput sgr0; clear
 }
 
@@ -28,7 +28,7 @@ function Deluge {
     Deluge_download
     Deluge_install
     Deluge_config
-    deport=$(cat /home/$username/.config/deluge/core.conf | grep daemon_port | grep -Eo '[0-9]{1,5}')
+    deport=$(cat /mnt/HC_Volume_18929656/$username/.config/deluge/core.conf | grep daemon_port | grep -Eo '[0-9]{1,5}')
     tput sgr0; clear
 }
 
